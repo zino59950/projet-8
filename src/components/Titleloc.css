@@ -1,3 +1,8 @@
+.title-loc {
+    display: flex;
+    justify-content: space-between; /* Ajout de l'espacement autour des éléments */
+    margin-top: 20px;
+}
 .title-loc h1 {
     color: #FF6060;
     font-family: Montserrat;
@@ -6,7 +11,6 @@
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 100px;
 }
 .title-loc p {
     color: #FF6060;
@@ -16,7 +20,6 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 100px;
 }
 .title-loc ul {
     display: flex;
@@ -27,7 +30,6 @@
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
-    margin-left: 60px;
 }
 .title-loc li {
     Width:115px;
@@ -65,9 +67,6 @@
 .host-info {
     display: flex;
     align-items: center;
-    position: absolute;
-    top:410px;
-    right: 200px;
 }
 .host-info p{
     font-family: Montserrat;
@@ -83,16 +82,21 @@
 .rating-info p {
     display: flex;
     align-items: center;
-    position: absolute;
-    top:530px;
-    right: 250px;
 }
+
+
 .inactive {
     color: grey;
 }
 /* Titleloc.css */
     /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+    .title-loc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .title-loc h1 {
         margin-left: 20px;
     }

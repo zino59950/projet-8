@@ -9,12 +9,14 @@
 .collaps {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #FF6060;
   width: 100%;
   max-width: 1023px;
   height: 52px;
   color: white;
   border-radius: 10px;
+  padding-left: 20px;
 }
 .collaps-description {
   width: 100%;
@@ -29,8 +31,8 @@
 /* Ajout de styles pour l'animation du chevron */
 .collaps .chevron-icon {
   transition: transform 0.3s ease;
-  margin-left: 90%;
   position: relative;
+  padding-right: 20px;
 }
 
 

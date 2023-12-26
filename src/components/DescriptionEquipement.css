@@ -15,8 +15,12 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .svg-inline--fa.fa-chevron-up.chevron-icon {
+  font-size: 20px;
+}
+.svg-inline--fa.fa-chevron-down.chevron-icon.rotate {
   font-size: 20px;
 }
 .description-content {
@@ -37,7 +41,6 @@
   
 .toggle-button .chevron-icon {
     transition: transform 0.15s ease; /* Ajout de la transition */
-    margin-left: 80%;
   }
   
   .DescriptionEquipement .collapsible-container.open .chevron-icon {
@@ -51,8 +54,9 @@
         display: block;
       }
       .toggle-button {
-        margin-bottom:20px;
+        margin-bottom: 20px;
         width: 375px;
+        width: 100%;
+      }
     }
-  }
   
