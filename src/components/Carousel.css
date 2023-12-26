@@ -7,8 +7,12 @@
   }
   
   .carousel button {
-    margin: 0 10px;
+    font-size: 80px;
+    color: white;
+    background: transparent; /* Rend le fond du bouton transparent */
+    border: none; /* Supprime la bordure du bouton si elle est présente */
   }
+  
   
   .carousel-inner {
     display: flex;
@@ -20,13 +24,13 @@
   z-index: 999;
   position: absolute;
   left: 20px;
-  top: 50%;
+  top: 35%;
   }
  .next {
   z-index: 999;
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 35%;
   }
   .carousel-item {
     display: none;
@@ -55,3 +59,24 @@
     font-size: 24px;
     border-radius: 30px;
   }
+      /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 900px) {
+  .carousel button {
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  .previous {
+    z-index: 999;
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    }
+   .next {
+    z-index: 999;
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    }
+}

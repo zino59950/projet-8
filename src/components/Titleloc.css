@@ -1,7 +1,10 @@
+
 .title-loc {
     display: flex;
     justify-content: space-between; /* Ajout de l'espacement autour des éléments */
     margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 170px;
 }
 .title-loc h1 {
     color: #FF6060;
@@ -11,6 +14,7 @@
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
+    width: 500px;
 }
 .title-loc p {
     color: #FF6060;
@@ -30,9 +34,11 @@
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
-}
+    padding: 0%;
+  }
 .title-loc li {
-    Width:115px;
+    padding-left:10px ;
+    padding-right: 10px;
     Height:25px;
     margin-right: 50px;
     background-color: #FF6060;
@@ -67,6 +73,7 @@
 .host-info {
     display: flex;
     align-items: center;
+    width: 200px;
 }
 .host-info p{
     font-family: Montserrat;
@@ -82,30 +89,54 @@
 .rating-info p {
     display: flex;
     align-items: center;
+    font-size: 36px; /* Ajustez la taille de police à votre convenance */
+    justify-content: flex-end;
 }
 
 
 .inactive {
-    color: grey;
+    color: #E3E3E3;
+
 }
 /* Titleloc.css */
     /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
 @media only screen and (max-width: 900px) {
+    .host-rating-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse; /* Inverse le sens de la ligne */
+      }
+      .host-info img {
+        border-radius: 70px;
+        margin-left: 5px;
+        width: 50px;
+        height: 50px;
+      }
+      .host-info {
+        width: 150px;
+      }
+      .host-info p {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+      }
+      .rating-info {
+        display: flex;
+        align-items: center;
+      }
+      
+      .rating-info p {
+        font-size: 20px; /* Ajustez la taille de police à votre convenance */
+      }
+      
     .title-loc {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        margin: 0px;
     }
-    .title-loc h1 {
-        margin-left: 20px;
-    }
-    .title-loc p {
-        margin-left: 20px;
-    }
-    .title-loc ul {
-        margin-left: -20px;
-    }
+
     .title-loc li {
         margin-right: 10px;
         width: 84px;
@@ -128,4 +159,4 @@
         flex-wrap: wrap;
         width: 90%;
       }
-  }
+    }
