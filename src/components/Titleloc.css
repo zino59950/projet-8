@@ -1,0 +1,127 @@
+.title-loc h1 {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 100px;
+}
+.title-loc p {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 100px;
+}
+.title-loc ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-left: 60px;
+}
+.title-loc li {
+    Width:115px;
+    Height:25px;
+    margin-right: 50px;
+    background-color: #FF6060;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#title-loc-1 {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 69.44%;
+    max-width: 580px;
+    height: 50px;
+    color: white;
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  #title-loc-2 {
+    padding-left: 10px;
+    flex-wrap: wrap;
+    width: 69.44%;
+    max-width: 580px;
+    height: 50px;
+    color: white;
+    background-color: #ff6060;
+    border-radius: 10px;
+  }
+.host-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:410px;
+    right: 200px;
+}
+.host-info p{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+.host-info img{
+    border-radius: 70px;
+    margin-left: 20px;
+}
+.rating-info p {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:530px;
+    right: 250px;
+}
+.inactive {
+    color: grey;
+}
+/* Titleloc.css */
+    /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 768px) {
+    .title-loc h1 {
+        margin-left: 20px;
+    }
+    .title-loc p {
+        margin-left: 20px;
+    }
+    .title-loc ul {
+        margin-left: -20px;
+    }
+    .title-loc li {
+        margin-right: 10px;
+        width: 84px;
+        height: 18px;
+    }
+    .forms-title {
+        margin-left: 10%;
+    }
+    #title-loc-1 {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+      #title-loc-2 {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+  }

@@ -1,0 +1,25 @@
+/* Votre fichier CSS */
+
+.banner {
+    width: 86.11%; /* La largeur est maintenant en pourcentage par rapport à une largeur parente de 1440 pixels */
+    max-width: 1240px; /* La largeur maximale est de 1240 pixels */
+    height: 223px;
+    margin-top: 100px;
+    margin: 100px auto; /* Centrer verticalement avec une marge en haut et en bas */
+    background-image: url("./background-banner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+  }
+  /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 768px) {
+   .banner {
+    width: 90%;
+   }
+
+}

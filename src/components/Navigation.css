@@ -1,0 +1,36 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    color: red;
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navigation {
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+    .nav-link {
+      font-size: 15px;
+    }
+ }

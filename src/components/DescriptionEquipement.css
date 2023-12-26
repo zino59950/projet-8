@@ -1,0 +1,58 @@
+.DescriptionEquipement {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+  }
+.toggle-button {
+    background: #FF6060;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width:  582px;
+    height:  52px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.svg-inline--fa.fa-chevron-up.chevron-icon {
+  font-size: 20px;
+}
+.description-content {
+    background-color: #f1f1f1;
+    width:  582px;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+}  
+.equipement-content {
+    width:  582px;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+}  
+.chevron-icon.rotate {
+    transform: rotate(360deg);
+    transition: transform 0.3s ease;
+  }
+  
+.toggle-button .chevron-icon {
+    transition: transform 0.15s ease; /* Ajout de la transition */
+    margin-left: 80%;
+  }
+  
+  .DescriptionEquipement .collapsible-container.open .chevron-icon {
+    transform: rotate(180deg); /* Rotation du chevron vers le bas quand ouvert */
+  }
+  
+/* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 1170px) {
+    .DescriptionEquipement {
+        flex-wrap: wrap;
+        display: block;
+      }
+      .toggle-button {
+        margin-bottom:20px;
+        width: 375px;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .carousel button {
+    margin: 0 10px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+  }
+ .previous {
+  z-index: 999;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  }
+ .next {
+  z-index: 999;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  }
+  .carousel-item {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    border-radius: 10px; /* Ajout du border-radius */
+    width: 1200px;
+    height: 300px;
+  }
+  
+  .carousel-item.active {
+    display: block;
+    opacity: 1;
+  }
+  .carousel-item img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px; /* La largeur maximale est de 1240 pixels */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    font-size: 24px;
+    border-radius: 30px;
+  }

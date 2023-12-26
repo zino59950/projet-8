@@ -1,0 +1,16 @@
+/* Votre fichier CSS */
+
+.banner2 {
+    width: 86.11%; /* La largeur est maintenant en pourcentage par rapport à une largeur parente de 1440 pixels */
+    max-width: 1240px; /* La largeur maximale est de 1240 pixels */
+    height: 223px;
+    margin: 50px auto; /* Centrer verticalement avec une marge en haut et en bas */
+    background-image: url("./banner-about.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    border-radius: 30px;
+  }
+  

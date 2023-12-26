@@ -1,0 +1,15 @@
+.logo img {
+    margin-left: 90px;
+    width: 210.32px;
+    height: 68px;
+}
+@media only screen and (max-width: 768px) {
+    .logo img {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 145px;
+        height: 46.88px;
+
+    }
+ 
+ }

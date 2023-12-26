@@ -1,0 +1,38 @@
+.collaps-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.collaps {
+  display: flex;
+  align-items: center;
+  background-color: #FF6060;
+  width: 100%;
+  max-width: 1023px;
+  height: 52px;
+  color: white;
+  border-radius: 10px;
+}
+.collaps-description {
+  width: 100%;
+  max-width: 1023px;
+  color: #FF6060;
+  padding-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+/* Ajout de styles pour l'animation du chevron */
+.collaps .chevron-icon {
+  transition: transform 0.3s ease;
+  margin-left: 90%;
+  position: relative;
+}
+
+
+
+

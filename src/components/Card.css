@@ -1,0 +1,50 @@
+/* Votre fichier CSS */
+
+.Card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  background: linear-gradient(180deg, salmon 0%, red 300%);
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+}
+
+/* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 1000px) {
+  .Card-content {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  .Card {
+    width: 84%;
+    height: 300px;
+  }
+}

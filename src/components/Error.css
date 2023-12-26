@@ -1,0 +1,52 @@
+/* Error.css */
+.error .return {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+.error h1 {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 300px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .error h3 {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .error p .home-link {
+    color: #ff6060;
+    text-decoration: none; 
+    cursor: pointer; 
+  }
+  @media only screen and (max-width: 768px) {
+    .error h1 {
+      font-size: 96px;
+    }
+    .error h3 {
+    font-size: 18px;
+    font-size: 18px;
+    line-height:25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    }
+    .error .return {
+      font-size: 14px;
+      line-height: 70px;
+    }
+  }
