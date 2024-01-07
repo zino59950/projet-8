@@ -28,8 +28,6 @@ const Location = () => {
         title={logement.title}
         location={logement.location}
         tags={logement.tags}
-        description={logement.description}
-        equipments={logement.equipments}
         host={logement.host}
         rating={logement.rating}
       />

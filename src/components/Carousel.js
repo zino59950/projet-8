@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Carousel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,9 +19,9 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel">
       <div className="carousel-inner">
-      <button className='previous' onClick={prevSlide}>
-      <FontAwesomeIcon icon={faChevronLeft} />
-      </button>
+        <button className='previous' onClick={prevSlide}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
         {images.map((image, index) => (
           <div
             key={index}
@@ -30,9 +30,12 @@ const Carousel = ({ images }) => {
             <img src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
-      <button className='next' onClick={nextSlide}>
-      <FontAwesomeIcon icon={faChevronRight} />
-      </button>
+        <button className='next' onClick={nextSlide}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
+      <div className="carousel-pagination">
+        {currentIndex + 1}/{images.length}
       </div>
     </div>
   );

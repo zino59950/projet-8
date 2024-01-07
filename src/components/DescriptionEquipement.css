@@ -48,7 +48,9 @@
   .DescriptionEquipement .collapsible-container.open .chevron-icon {
     transform: rotate(180deg); /* Rotation du chevron vers le bas quand ouvert */
   }
-  
+  ul {
+    list-style: none;
+  }
 /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
 @media only screen and (max-width: 1170px) {
     .DescriptionEquipement {
