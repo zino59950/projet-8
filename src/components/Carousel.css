@@ -10,7 +10,7 @@
 
 .carousel-pagination {
   z-index: 999;
-  color: gray;
+  color: white;
   font-size: 20px;
   position: absolute;
   bottom: 10px; /* Ajustez la position par rapport au bas */

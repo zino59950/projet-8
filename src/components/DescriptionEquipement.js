@@ -1,8 +1,14 @@
+// Importe React et useState depuis la bibliothèque React
 import React, { useState } from 'react';
+
+// Importe le fichier de style CSS pour le composant DescriptionEquipement
 import './DescriptionEquipement.css';
+
+// Importe FontAwesomeIcon et les icônes associées pour les flèches haut et bas
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
+// Définit le composant fonctionnel DescriptionEquipement
 const DescriptionEquipement = ({ description, equipments }) => {
   // Utilisation de useState pour gérer l'état de la collapsible description
   const [descriptionCollapsed, setDescriptionCollapsed] = useState(true);
@@ -20,6 +26,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
     setEquipementCollapsed(!equipementCollapsed);
   };
 
+  // Rendu du composant DescriptionEquipement
   return (
     <div className='DescriptionEquipement'>
       {/* Collapsible pour la description */}
@@ -29,7 +36,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
           {/* Texte du bouton avec un espace pour le chevron */}
           {descriptionCollapsed ? 'Description ' : 'Description '}
           
-          {/* Icone du chevron avec une classe pour l'animation de rotation */}
+          {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
             icon={descriptionCollapsed ? faChevronUp : faChevronDown}
             className={`chevron-icon ${descriptionCollapsed ? '' : 'rotate'}`}
@@ -51,7 +58,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
           {/* Texte du bouton avec un espace pour le chevron */}
           {equipementCollapsed ? "Equipement" : "Equipement"}
           
-          {/* Icone du chevron avec une classe pour l'animation de rotation */}
+          {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
             icon={equipementCollapsed ? faChevronUp : faChevronDown}
             className={`chevron-icon ${equipementCollapsed ? '' : 'rotate'}`}
@@ -62,6 +69,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {equipementCollapsed ? null : (
           <div className='equipement-content'>
             <ul>
+              {/* Mapping sur les équipements pour créer une liste */}
               {equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}
@@ -73,4 +81,5 @@ const DescriptionEquipement = ({ description, equipments }) => {
   );
 };
 
+// Exporte le composant DescriptionEquipement pour pouvoir l'utiliser ailleurs dans l'application
 export default DescriptionEquipement;

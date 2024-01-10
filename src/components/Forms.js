@@ -1,8 +1,14 @@
+// Importe React et useState depuis la bibliothèque React
 import React, { useState } from "react";
+
+// Importe le fichier de style CSS pour le composant Forms
 import './Forms.css';
+
+// Importe FontAwesomeIcon et les icônes associées pour les flèches haut et bas
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
+// Définit le composant fonctionnel Forms
 const Forms = () => {
   // Utilisation de useState pour gérer l'état de chaque collapsible
   const [isCollapsible1Open, setCollapsible1Open] = useState(false);
@@ -20,6 +26,7 @@ const Forms = () => {
     );
   };
 
+  // Rendu du composant Forms
   return (
     <div>
       {/* Collapsible 1 */}
@@ -99,4 +106,5 @@ const Forms = () => {
   );
 };
 
+// Exporte le composant Forms pour pouvoir l'utiliser ailleurs dans l'application
 export default Forms;
