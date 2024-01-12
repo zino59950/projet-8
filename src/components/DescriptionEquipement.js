@@ -34,7 +34,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Bouton pour activer/désactiver la collapsible description */}
         <button className={`toggle-button ${descriptionCollapsed ? '' : 'open'}`} onClick={toggleDescriptionCollapse}>
           {/* Texte du bouton avec un espace pour le chevron */}
-          {descriptionCollapsed ? 'Afficher la Description' : 'Masquer la Description'}
+          {descriptionCollapsed ? 'Description' : 'Description'}
           
           {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
@@ -57,7 +57,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Bouton pour activer/désactiver la collapsible équipement */}
         <button className={`toggle-button ${equipementCollapsed ? '' : 'open'}`} onClick={toggleEquipementCollapse}>
           {/* Texte du bouton avec un espace pour le chevron */}
-          {equipementCollapsed ? 'Afficher les Équipements' : 'Masquer les Équipements'}
+          {equipementCollapsed ? 'Équipements' : 'Équipements'}
           
           {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
