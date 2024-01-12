@@ -1,4 +1,4 @@
-// Importe React et useState depuis la bibliothèque React
+// Importe React et le hook useState depuis la bibliothèque React
 import React, { useState } from 'react';
 
 // Importe le fichier de style CSS pour le composant DescriptionEquipement
@@ -10,10 +10,10 @@ import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 // Définit le composant fonctionnel DescriptionEquipement
 const DescriptionEquipement = ({ description, equipments }) => {
-  // Utilisation de useState pour gérer l'état de la collapsible description
+  // Utilisation du hook useState pour gérer l'état de la collapsible description
   const [descriptionCollapsed, setDescriptionCollapsed] = useState(true);
 
-  // Utilisation de useState pour gérer l'état de la collapsible équipement
+  // Utilisation du hook useState pour gérer l'état de la collapsible équipement
   const [equipementCollapsed, setEquipementCollapsed] = useState(true);
 
   // Fonction pour basculer l'état de la collapsible description
@@ -34,7 +34,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Bouton pour activer/désactiver la collapsible description */}
         <button className={`toggle-button ${descriptionCollapsed ? '' : 'open'}`} onClick={toggleDescriptionCollapse}>
           {/* Texte du bouton avec un espace pour le chevron */}
-          {descriptionCollapsed ? 'Description ' : 'Description '}
+          {descriptionCollapsed ? 'Afficher la Description' : 'Masquer la Description'}
           
           {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
@@ -46,6 +46,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Contenu de la collapsible description */}
         {descriptionCollapsed ? null : (
           <div className='description-content'>
+            {/* Affiche la description du logement */}
             <p>{description}</p>
           </div>
         )}
@@ -56,7 +57,7 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Bouton pour activer/désactiver la collapsible équipement */}
         <button className={`toggle-button ${equipementCollapsed ? '' : 'open'}`} onClick={toggleEquipementCollapse}>
           {/* Texte du bouton avec un espace pour le chevron */}
-          {equipementCollapsed ? "Equipement" : "Equipement"}
+          {equipementCollapsed ? 'Afficher les Équipements' : 'Masquer les Équipements'}
           
           {/* Icône du chevron avec une classe pour l'animation de rotation */}
           <FontAwesomeIcon
@@ -68,8 +69,8 @@ const DescriptionEquipement = ({ description, equipments }) => {
         {/* Contenu de la collapsible équipement */}
         {equipementCollapsed ? null : (
           <div className='equipement-content'>
+            {/* Liste des équipements du logement */}
             <ul>
-              {/* Mapping sur les équipements pour créer une liste */}
               {equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}

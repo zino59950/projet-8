@@ -15,6 +15,8 @@ const Forms = () => {
   const [isCollapsible2Open, setCollapsible2Open] = useState(false);
   const [isCollapsible3Open, setCollapsible3Open] = useState(false);
   const [isCollapsible4Open, setCollapsible4Open] = useState(false);
+// Utilise le hook useEffect pour effectuer des actions après le rendu du composant.
+// Cela peut inclure des appels à des API, la gestion d'effets secondaires, ou la mise à jour de l'état en réponse à des changements.
 
   // Fonction générique pour rendre l'icône du chevron en fonction de l'état de la collapsible
   const renderChevron = (isOpen) => {
