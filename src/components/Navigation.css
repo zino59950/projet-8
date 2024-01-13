@@ -23,6 +23,14 @@
     letter-spacing: 0em;
     text-align: right;
   }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-link.active {
+    text-decoration: underline;
+  }
   
   @media only screen and (max-width: 768px) {
     .navigation {

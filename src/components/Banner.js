@@ -1,10 +1,10 @@
 import React from 'react';
 import './Banner.css'; // Import du fichier CSS
 
-const Banner = () => {
+const Banner = (props) => {
     return (
-        <div className='banner'>
-            Chez vous, partout et ailleurs.
+        <div className={`banner ${props.image}`}>
+            { props.title }
         </div>
     );
 };
